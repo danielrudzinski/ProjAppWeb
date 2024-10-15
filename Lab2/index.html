@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Filmy Oscarowe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="kolorujtlo.js" type="text/javascript"></script>
+    <script src="timedata.js" type="text/javascript"></script>
+</head>
+<body onload ="startclock(), loadBackground()"class="main">
+   
+    <table class="menu">
+        <tr>
+            <table class="menu">
+                <tr>
+                    <td><a href="index.html">Strona Główna</a></td>
+                    <td><a href="Oppenheimer.html">Oppenheimer</a></td>
+                    <td><a href="NOMADLAND.html">Nomadland</a></td>
+                    <td><a href="CODA.html">CODA</a></td>
+                    <td><a href="parasite.html">Parasite</a></td>
+                    <td><a href="greenbook.html">Green Book</a></td>
+                    <td><a href="kontakt.html">Kontakt</a></td>
+                    
+                </tr>
+            </table>
+        </tr>
+    </table>
+    <div class="text-formatmain">
+    <h1> Filmy Oscarowe</h1>
+    
+        <p><b> Witaj na naszej stronie </b> <br>Chcemy przedstawić Ci wybrane przez nas najlepsze filmy Oscarowe <br>Zapraszamy do zapoznania się  </p>
+    
+    
+    </div>
+    <form method="POST" name="background" class="centered-form">
+        <input class="button" type="button" value="Opcja 1" onclick="changeBackground('osc1.jpg')">
+        <input class="button" type="button" value="Opcja 2" onclick="changeBackground('osc2.jpg')">
+        <input class="button" type="button" value="Opcja 3" onclick="changeBackground('oskar.jpg')">
+    </form>
+    <div id="zegarek-container">
+        <div id="zegarek"></div>
+        <div id="data"></div>
+    </div>
+    
+
+    
+</body>
+</html>
