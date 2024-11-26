@@ -1,0 +1,200 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+.main{
+    background-image: url('../img/oskar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+
+}
+
+.menu {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+    
+}
+
+.menu td {
+    padding: 15px;
+    text-align: center;
+    background-color: #444;
+}
+
+.menu td a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu td:hover {
+    background-color: #555;
+}
+.menu td:active{
+    background-color: #566;
+}
+
+.text-format {
+    text-align: justify;
+    line-height: 1.6;
+}
+.text-formatmain {
+    text-align: center;
+    line-height: 1.6;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+img {
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.highlight {
+    background-color: yellow;
+}
+.text-format{
+    max-width: fit-content;
+    margin-inline: auto;
+    font-size: large;
+}
+
+.media{
+    margin-top:45px;
+    
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-left: 20px;
+}
+.socials {
+    margin-bottom: 20px; 
+    width: 100px; 
+    height: auto; 
+    margin-left:70px;
+}
+.media{
+    margin-left:295px;    
+}
+.kontakt{
+    margin-left:5px;
+}
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    float: left;
+}
+.item {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+.img {
+    float: left; 
+   
+}
+.Watch{
+    display: flex; 
+    justify-content: left;
+    font-size: large;
+    font-weight: bold;
+}
+.wtw{
+    display: flex;
+    
+}
+.button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;               
+    transition: background-color 0.3s ease;
+   
+}
+.centered-form {
+    display: flex;               
+    flex-direction: column;      
+    align-items: center;         
+    justify-content: center;     
+    height: 100vh;             
+}
+
+
+.button:hover {
+    background-color: #555;
+}
+
+#zegarek-container {
+    position: absolute;
+    top: 20px;
+    left: 1px;
+    padding: 60px;
+}
+
+#zegarek, #data {
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    margin-top: 10px;
+    text-align: center;
+    min-width: 120px;
+}
+
+#zegarek:hover, #data:hover {
+    background-color: #d4edda;
+    color: #155724;
+    transition: background-color 0.3s ease;
+}
+.test-block {
+    width: 200px;
+    border: 2px solid rgba(71, 236, 30, 1);
+    background: rgba(71, 236, 30, 0.7);
+    text-align: center;
+    color: #000;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
