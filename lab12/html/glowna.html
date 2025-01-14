@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmy Oscarowe</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+</head>
+<body onload="startclock()">
+    <header>
+        <h1>Filmy Oscarowe</h1>
+    </header>
+
+    <table style="width: 100%">
+        <tr>
+            <th><a href="index.php"> Strona główna </a></th>
+            <th><a href="index.php?idp=podstrona1"> Filmy </a></th>
+            <th><a href="index.php?idp=podstrona2"> Zaskoczenia </a></th>
+            <th><a href="index.php?idp=podstrona3"> Gala 2024 </a></th>
+            <th><a href="index.php?idp=podstrona4"> Kontakt </a></th>
+            <th><a href="index.php?idp=podstrona5"> Zwiastuny</a></th>
+        </tr>
+    </table>
+
+    <div id="zegarek"></div>
+    <div id="data"></div>
+
+    <section id="wstęp">
+        <h2>Gala Oscarów</h2>
+        <b> Rozdanie Oscarów to najważniejsza i najbardziej prestiżowa ceremonia wręczenia nagród w Hollywood, odbywająca się co roku. Z biegiem lat stała się wielkim wydarzeniem, na które z niecierpliwością czekają zarówno ci bezpośrednio, jak i pośrednio związani z przemysłem filmowym. Popularność Oscarów nieustannie rośnie, przyciągając uwagę na całym świecie.</b>
+        <br>
+        <img src="img/glowna.jpg" alt="Gala oscarów" height="400" width="600" />
+        <figcaption> Gala oscarów </figcaption> 
+    </section>
+
+    <section id="statuetka">
+        <h2>Oscar</h2>
+        <b> Zwycięzcy we wszystkich kategoriach otrzymują prestiżową statuetkę znaną jako "Oscar". Jest to figura o wysokości nieco ponad 34 cm i wadze przekraczającej 4 kilogramy. Wykonana z brązu, pokryta jest 24-karatowym złotem, co nadaje jej wyjątkowego blasku. Na dole statuetki znajduje się rolka filmu umieszczona pod złotym krzyżowcem, która posiada pięć charakterystycznych "szczebli" – symbolizujących pięć początkowych kategorii, w których nagroda była początkowo przyznawana. Oscar to nie tylko fizyczny symbol sukcesu, ale także bezcenny symbol uznania w świecie kina, który z roku na rok staje się jeszcze bardziej pożądany i zdeterminowany przez artystyczne i techniczne osiągnięcia filmowców.</b>
+        <br>
+        <img src="img/oskar.jpg" alt="Statuetka Oscara" height="275" width="500" />
+        <figcaption> Statuetka</figcaption> 
+    </section>
+
+    <section id="guzik1">
+        <div id="animacjaTestowa1" class="test-block"> Kliknij, a się powiększe</div>
+        <script>
+            $("#animacjaTestowa1").on("click", function(){
+                $(this).animate({
+                    width: "500px",
+                    opacity: 0.4,
+                    fontSize: "3em",
+                    borderwidth: "10px"
+                }, 1500);
+            });
+        </script>
+    </section>
+
+    <section id="guzik2">
+        <div id="animacjaTestowa2" class="test-block"> Najedź kursorem, a się powiększe</div>
+        <script>
+            $("#animacjaTestowa2").on({
+                "mouseover": function() {
+                    $(this).animate({
+                        width: 300
+                    }, 800);
+                },
+                "mouseout": function() {
+                    $(this).animate({
+                        width: 200
+                    }, 800);
+                }
+            });
+        </script>
+    </section>
+
+    <section id="guzik3">
+        <div id="animacjaTestowa3" class="test-block"> Klikaj, abym urósł</div>
+        <script>
+            $("#animacjaTestowa3").on("click", function() {
+                if (!$(this).is(":animated")) {
+                    $(this).animate({
+                        width: "+=50",
+                        height: "+=10",
+                        opacity: "+=0.1",
+                        duration: 3000
+                    });
+                }
+            });
+        </script>
+    </section>
+
+    <!-- Formularz z przyciskami zmieniającymi tło -->
+    <form method="POST" name="background">
+        <input type="button" value="żółty" onclick="changeBackground('#FFF000')">
+        <input type="button" value="czarny" onclick="changeBackground('#000000')">
+        <input type="button" value="biały" onclick="changeBackground('#FFFFFF')">
+        <input type="button" value="zielony" onclick="changeBackground('#00FF00')">
+        <input type="button" value="niebieski" onclick="changeBackground('#0000FF')">
+        <input type="button" value="pomarańczowy" onclick="changeBackground('#FF8000')">
+        <input type="button" value="szary" onclick="changeBackground('#C0C0C0')">
+        <input type="button" value="czerwony" onclick="changeBackground('#FF0000')">
+    </form>
+
+    <script>
+        // Funkcja zmieniająca tło strony
+        function changeBackground(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
